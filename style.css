@@ -1,0 +1,392 @@
+/* Importing Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Resetting margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container styles */
+.main-container {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  margin: 40px 80px;
+  gap: 80px;
+}
+
+/* Responsive styling for main container on smaller screens */
+@media (max-width: 1024px) {
+  .main-container {
+    flex-direction: column;
+    margin: 10px 40px;
+    gap: 60px;
+  }
+}
+
+/* Image container styles */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Rounded corners for images */
+img {
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+/* Product image styles */
+.product-image {
+  width: 587px;
+  height: 691px;
+}
+
+.active-image {
+  border: 2px solid rgba(58, 73, 128, 1);; /* You can customize the border style and color */
+}
+
+/* Responsive styling for product image on smaller screens */
+@media (max-width: 1024px) {
+  .product-image {
+    width: 100%;
+    height: 491px;
+  }
+}
+
+/* Styles for three small images */
+.three-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .three-images {
+    gap: 16px;
+  }
+}
+
+/* Small image styles */
+.small-image {
+  height: 115px;
+  width: 115px;
+}
+
+/* Responsive styling for small image on smaller screens */
+@media (max-width: 1024px) {
+  .small-image {
+    height: 85px;
+    width: 85px;
+  }
+}
+
+@media (max-width: 768px) {
+  .small-image {
+    height: 70px;
+    width: 70px;
+    
+  }
+}
+
+/* Span styles for additional information */
+span {
+  color: #B9BBBF;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Data container styles */
+.data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 18px;
+}
+
+/* Heading container styles */
+.heading-container {
+  display: flex;
+  gap: 11px;
+  flex-direction: column;
+}
+
+/* Price heading styles */
+.pirce h1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+/* Price container styles */
+.price-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for original price in price container */
+.price-container p {
+  color: #00000080;
+  font-weight: 400;
+  font-size: 21px;
+  text-decoration: line-through;
+}
+
+/* Styles for price heading in price container */
+.price-heading {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+/* Styles for main price heading */
+.price-heading h1 {
+  color: #3A4980;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 2;
+}
+
+/* Styles for discount span in price heading */
+.price-heading span {
+  color: #FF000080;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+/* Colors container styles */
+.colors-container {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+/* Styles for color options bar */
+.colors-bar {
+  display: flex;
+  gap: 12px;
+}
+
+/* Color chooser styles */
+.color-chooser {
+  display: flex;
+  gap: 10px;
+}
+
+/* Color option styles */
+.color-option {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  transition: border 0.3s;
+  position: relative;
+}
+
+/* Selected color option styles */
+
+.color-option.active-color::after {
+  content: '\2713'; /* Unicode character for checkmark */
+  font-size: 24px;
+  color: #fff; /* Tick color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #fff;
+  padding: 8px 16px;
+
+}
+
+
+
+/* Sizes container styles */
+.sizes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Size selector styles */
+.size-selector {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Radio button styles for size selection */
+.radio-button {
+  background-color: rgba(243, 243, 243, 1);
+  border-radius: 8px;
+  padding: 7px 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Styling for checked radio button label */
+.radio-button input[type="radio"]:checked + label {
+  color: rgba(58, 73, 128, 1);
+}
+
+/* Apply styles to the actual radio button when checked */
+.radio-button input[type="radio"]:checked {
+  border-color: rgba(58, 73, 128, 1); 
+}
+
+/* Buttons container styles */
+.buttons-container {
+  margin-top: 19px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Default styles for the "Add to Cart" button */
+.addtocart button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(58, 73, 128, 1);
+  padding: 11px 70px;
+  border: none;
+  border-radius: 29.5px;
+  cursor: pointer;
+}
+
+/* Styling for the icon in "Add to Cart" button */
+.addtocart i {
+  font-size: 22px;
+  color: #fff;
+  padding: 0;
+  margin-bottom: 6px;
+}
+
+/* Styling for the text in "Add to Cart" button */
+.addtocart button span {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+}
+
+.addedProducts{
+ background-color: rgba(231, 248, 183, 1);
+ text-align: center;
+ border-radius: 8px;
+ padding: 8px;
+ font-size: 14px;
+ font-weight: 600;
+}
+
+@media(max-width: 768px) {
+  .addedProducts{
+    font-size: 11px;
+   }
+}
+
+/* Media query for tablet screens */
+@media(max-width: 768px) {
+  .addtocart button {
+    padding: 11px 50px;
+  }
+
+  /* Adjustments for text size in "Add to Cart" button on tablet screens */
+  .addtocart button span {
+    font-size: 14px;
+  }
+}
+
+/* Media query for smaller screens */
+@media(max-width: 480px) {
+  .addtocart button {
+    padding: 11px 30px;
+  }
+
+  /* Further adjustments for icon size in "Add to Cart" button on smaller screens */
+  .addtocart i {
+    font-size: 18px;
+  }
+
+  /* Further adjustments for text size in "Add to Cart" button on smaller screens */
+  .addtocart button span {
+    font-size: 12px;
+  }
+}
+
+/* Default styles for the counter button */
+.counter button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(243, 243, 243, 1);
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 29.5px;
+  cursor: pointer;
+  
+}
+
+/* Styling for the text in the counter button */
+.counter button span {
+  margin: 0 10px;
+  font-weight: 700;
+  font-size: 22px;
+  color: rgba(58, 73, 128, 1);
+}
+
+/* Media query for smaller screens */
+@media(max-width: 768px) {
+  .counter button {
+    padding: 12px 16px;
+  }
+
+  .counter button span {
+    font-size: 18px;
+  }
+}
+
+/* Media query for even smaller screens */
+@media(max-width: 480px) {
+  
+  .counter button {
+    padding: 12px 8px;
+  }
+
+  .counter button span {
+    font-size: 16px;
+  }
+}
+
+.size-selector input{
+  accent-color: rgba(58, 73, 128, 1);
+}
+
+/* Description container styles */
+.description-container p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  color: rgba(163, 163, 163, 1);
+  text-align: left;
+}
+
+@media(max-width: 768px){
+  .description-container p{
+    font-size: 16px;
+  }
+}
+
+/* Horizontal rule styles */
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(228, 228, 228, 1);
+}

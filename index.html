@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Image Container -->
+      <div class="image-container">
+        <div>
+          <!-- Main Product Image -->
+          <img
+            class="product-image"
+             src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="product-image"
+            id="mainProductImage"
+          />
+        </div>
+        <!-- Three Small Images -->
+        <div class="three-images" onclick="changeProductImage(event)">
+          <img
+            class="small-image"
+            src="https://images.unsplash.com/photo-1585487000376-31e93cfda351?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D"
+            alt="product-image"
+          />
+          <img
+            class="small-image"
+            src="https://media.istockphoto.com/id/1088395418/photo/fashion-photo-of-young-beautiful-female-model-in-dress-studio-photo.jpg?s=1024x1024&w=is&k=20&c=uB6zwAZYyC7Z1juO--HAi5rolQpG2DMkUGCQObkyURQ="
+            alt="product-image"
+          />
+          <img
+            class="small-image"
+            src="https://media.istockphoto.com/id/1095989060/photo/beautiful-model-posing-in-fashion-red-dress.jpg?s=1024x1024&w=is&k=20&c=DIMoM9z5DdCGH04xcMCqXOhqErB2QkFB-bhs525g0Gg="
+            alt="product-image"
+          />
+          <img
+            class="small-image"
+            src="https://media.istockphoto.com/id/1095989060/photo/beautiful-model-posing-in-fashion-red-dress.jpg?s=1024x1024&w=is&k=20&c=DIMoM9z5DdCGH04xcMCqXOhqErB2QkFB-bhs525g0Gg="
+            alt="product-image"
+          />
+        </div>
+      </div>
+
+      <!-- Data Container -->
+      <div class="data-container">
+        <!-- Heading Container -->
+        <div class="heading-container">
+          <span>VENDOR</span>
+          <h1>TITLE</h1>
+        </div>
+        <hr />
+
+        <!-- Price Container -->
+        <div class="price-container">
+          <div class="price-heading">
+            <h1 class="price">PRICE</h1>
+            <span class="discount">% DISCOUNT</span>
+          </div>
+          <p>OLD PRICE</p>
+        </div>
+        <hr />
+
+        <!-- Colors Container -->
+        <div class="colors-container">
+          <span>Choose a color</span>
+          <div class="colors-bar">
+            <div class="color-option"></div>
+            <div class="color-option"></div>
+            <div class="color-option"></div>
+            <div class="color-option"></div>
+          </div>
+        </div>
+        <hr />
+
+        <!-- Sizes Container -->
+        <div class="sizes-container">
+          <span>Choose a Size</span>
+          <div class="size-selector">
+            <div class="radio-button">
+              <input type="radio" />
+              <label></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buttons Container -->
+        <div class="buttons-container">
+          <!-- Counter -->
+          <div class="counter">
+            <button>
+              <span id="decrement">-</span>
+              <span id="count">1</span>
+              <span id="increment">+</span>
+            </button>
+          </div>
+
+          <!-- Add to Cart Button -->
+          <div class="addtocart">
+            <button id="addToCartBtn">
+              <i class="fa fa-shopping-bag"></i>
+              <span>Add To Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- AddedProducts Container -->
+        <div class="addedProducts">Please add products to cart</div>
+
+        <hr />
+
+        <!-- Description Container -->
+        <div class="description-container">
+          <p>
+            <!-- /DESCRIPTION -->
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -15,7 +15,7 @@
   gap: 80px;
 }
 
-/* Responsive styling for main container on smaller screens */
+/* Responsive styles for main container on smaller screens */
 @media (max-width: 1024px) {
   .main-container {
     flex-direction: column;
@@ -45,7 +45,7 @@ img {
 }
 
 .active-image {
-  border: 2px solid rgba(58, 73, 128, 1);; /* You can customize the border style and color */
+  border: 2px solid rgba(58, 73, 128, 1);
 }
 
 /* Responsive styling for product image on smaller screens */
@@ -76,7 +76,7 @@ img {
   width: 115px;
 }
 
-/* Responsive styling for small image on smaller screens */
+/* Responsive style for small image on smaller screens */
 @media (max-width: 1024px) {
   .small-image {
     height: 85px;
@@ -134,7 +134,7 @@ span {
   text-decoration: line-through;
 }
 
-/* Styles for price heading in price container */
+/* Styles price heading */
 .price-heading {
   display: flex;
   align-items: center;
@@ -149,7 +149,7 @@ span {
   line-height: 2;
 }
 
-/* Styles for discount span in price heading */
+/* Styles for discount in price heading */
 .price-heading span {
   color: #FF000080;
   font-weight: 400;
@@ -163,13 +163,13 @@ span {
   gap: 13px;
 }
 
-/* Styles for color options bar */
+/* Styles for color options */
 .colors-bar {
   display: flex;
   gap: 12px;
 }
 
-/* Color chooser styles */
+/* Color choose styles */
 .color-chooser {
   display: flex;
   gap: 10px;
@@ -187,9 +187,9 @@ span {
 /* Selected color option styles */
 
 .color-option.active-color::after {
-  content: '\2713'; /* Unicode character for checkmark */
+  content: '\2713';
   font-size: 24px;
-  color: #fff; /* Tick color */
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -248,7 +248,7 @@ span {
   gap: 16px;
 }
 
-/* Default styles for the "Add to Cart" button */
+/* styles for the "Add to Cart" button */
 .addtocart button {
   display: flex;
   align-items: center;

@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     colorOptions.forEach((color, index) => {
       const colorOption = document.createElement("div");
       colorOption.className = "color-option";
-      colorOption.style.backgroundColor = Object.values(color)[0];
+      colorOption.style.backgroundColor = Object.keys(color)[0];
       colorOption.addEventListener("click", () => handleColorClick(index));
       colorsBar.appendChild(colorOption);
     });
@@ -136,6 +136,9 @@ document.addEventListener("DOMContentLoaded", function () {
   addToCartBtn.addEventListener("click", addToCart);
   
   function addToCart() {
+    const countElement = document.getElementById("count");
+    const countValue = parseInt(countElement.textContent);
+
     // Get the product title
     const productTitle = document.querySelector(
       ".heading-container h1"
@@ -158,9 +161,10 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("cartProductTitle", productTitle);
       localStorage.setItem("cartSelectedSize", sizeValue);
       localStorage.setItem("cartActiveColor", colorValue);
+      localStorage.setItem("cartCountElement", countValue);
   
       const addedProductsDiv = document.querySelector(".addedProducts");
-      addedProductsDiv.textContent = `${productTitle} with Color ${colorValue} and Size ${sizeValue} added to cart`;
+      addedProductsDiv.textContent = `${countValue} ${productTitle} with Color ${colorValue} and Size ${sizeValue} added to cart`;
     } else {
       alert("Please select a size and color before adding to cart");
     }
